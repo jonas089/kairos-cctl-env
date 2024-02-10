@@ -19,3 +19,10 @@ The `setup.sh` script will automatically fetch all repositories from the correct
 
 # Build script
 The `build-nctl.sh` script will build an NCTL environment, create a docker container for it and then extract all funded keys. The funded keys will be located in `./nctl-titano-env/custom/users/`.
+
+# Purge script
+The `purge.sh` script will remove the nctl docker artifacts and the crates pulled by the build script.
+
+# Source NCTL client 
+Once the NCTL environment has been built, the NCTL client funtionality can be made available by sourcing this script:
+`source ./nctl-titano-env/custom/casper-nctl-docker/nctl-activate.sh`
