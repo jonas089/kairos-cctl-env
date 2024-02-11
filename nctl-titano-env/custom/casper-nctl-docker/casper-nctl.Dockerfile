@@ -30,8 +30,8 @@ RUN git clone https://github.com/casper-network/casper-node-launcher.git ~/caspe
     && cd ~/casper-node-launcher && cargo build --release
 RUN git clone -b main https://github.com/casper-ecosystem/casper-client-rs ~/casper-client-rs \
     && cd ~/casper-client-rs && cargo build --release
-RUN git clone -b $GITBRANCH https://github.com/casper-network/casper-node ~/casper-node \
-    && source ~/casper-node/utils/nctl/sh/assets/compile.sh 
+RUN git clone -b $GITBRANCH https://github.com/jonas089/casper-node ~/casper-node \
+    && source ~/casper-node/utils/nctl/sh/assets/compile.sh
 
 # run clean-build-artifacts.sh to remove intermediate files and keep the image lighter
 COPY ./clean-build-artifacts.sh .
