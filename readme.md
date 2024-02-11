@@ -14,15 +14,3 @@ This environment utilizes the dockerized version of nctl. In order to be able to
 
 6. Use the contract-CLI to interact with the contract, or deploy session code. Make sure to study the arguments as the *order of supplied arguments matters*!
 
-# Setup script
-The `setup.sh` script will automatically fetch all repositories from the correct branch for Kairos contract development. It will clone `purse-contract-1.x`, `purse-contract-cli` and `casper-client-rs`.
-
-# Build script
-The `build-nctl.sh` script will build an NCTL environment, create a docker container for it and then extract all funded keys. The funded keys will be located in `./nctl-titano-env/custom/users/`.
-
-# Purge script
-The `purge.sh` script will remove the nctl docker artifacts and the crates pulled by the build script.
-
-# Source NCTL client 
-Once the NCTL environment has been built, the NCTL client funtionality can be made available by sourcing this script:
-`source ./nctl-titano-env/custom/casper-nctl-docker/nctl-activate.sh`
