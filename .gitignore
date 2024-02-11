@@ -5,3 +5,6 @@ kairos-contract-cli
 nctl-titano-env/custom/users
 *.pem
 users
+casper-node
+casper-node-launcher
+cctl
