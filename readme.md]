@@ -1,0 +1,41 @@
+# Kairos (Deposit) Smart Contract Environment
+This repo contains setup scripts to pull the latest compatible versions of casper-node, casper-client, the kairos deposit contract and the kairos contract cli.
+
+The `secret_key.pem` in the root is the default key for user-1.
+
+## Clone and compile binaries
+```bash
+./setup-cctl.sh
+source ./cctl/activate
+cctl-infra-bin-compile
+``` 
+
+## Setup assets and start cctl network
+```bash
+cctl-infra-net-setup
+cctl-infra-net-start
+```
+
+## Stop and purge cctl network
+```bash
+cctl-infra-net-stop
+./purge.sh
+```
+
+## Clone contract and contract cli
+```bash
+./setup.sh
+```
+
+## Compile contract on ubuntu
+```bash
+./build-ubuntu-feat-2.0.sh
+```
+=> deposit-contract-optimized.wasm, ...
+
+## Compile contract on macos
+```bash
+./build-macos-darwin-feat-2.0.sh
+=> deposit-contract-optimized.wasm, ...
+```
+
