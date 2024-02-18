@@ -35,7 +35,7 @@ cctl-infra-net-stop
 
 ## Compile kairos deposit contract
 ```bash
-cd purse-contract-1.x
+cd kairos-deposit-contract
 ```
 
 ### Compile on Ubuntu
