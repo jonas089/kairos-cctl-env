@@ -25,7 +25,7 @@ cctl-infra-net-stop
 ## Purge cctl network
 ```bash
 cctl-infra-net-stop
-./purge.sh
+./purge-cctl.sh
 ```
 
 ## Clone kairos deposit contract and contract cli
