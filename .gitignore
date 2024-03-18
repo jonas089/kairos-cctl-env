@@ -1,12 +1,1 @@
-kairos-deposit-contract
-kairos-contract-cli
-casper-client-rs
-kairos-contract-cli
-nctl-titano-env/custom/users
-*.pem
-users
-casper-node
-casper-node-launcher
-cctl
-casper-client
 kairos-lab
